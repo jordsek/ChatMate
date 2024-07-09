@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LoginView: View {
     
@@ -13,6 +14,14 @@ struct LoginView: View {
     @State private var password: String = ""
     private var isFormValid: Bool {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace
+    }
+    
+    private func login() async {
+        do {
+          _ =  try await  Auth.auth().signIn(withEmail: email, password: password)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     var body: some View {
