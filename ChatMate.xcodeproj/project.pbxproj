@@ -19,6 +19,10 @@
 		038A06C82C3D73C90017DE6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06C72C3D73C90017DE6E /* FirebaseFirestore */; };
 		038A06CA2C3D73C90017DE6E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06C92C3D73C90017DE6E /* FirebaseFirestoreSwift */; };
 		038A06CC2C3D73C90017DE6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06CB2C3D73C90017DE6E /* FirebaseStorage */; };
+		03BDAA0F2C3D79450081E3FA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA0E2C3D79450081E3FA /* SignupView.swift */; };
+		03BDAA122C3D7DF50081E3FA /* Strings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA112C3D7DF50081E3FA /* Strings+Extensions.swift */; };
+		03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA152C3DA2C20081E3FA /* ChatViewModel.swift */; };
+		03BDAA182C3DABC50081E3FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA172C3DABC50081E3FA /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		038A06B32C3D6F750017DE6E /* ChatMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMateUITests.swift; sourceTree = "<group>"; };
 		038A06B52C3D6F750017DE6E /* ChatMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		038A06C22C3D71FA0017DE6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03BDAA0E2C3D79450081E3FA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		03BDAA112C3D7DF50081E3FA /* Strings+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extensions.swift"; sourceTree = "<group>"; };
+		03BDAA152C3DA2C20081E3FA /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		03BDAA172C3DABC50081E3FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 		038A06972C3D6F730017DE6E /* ChatMate */ = {
 			isa = PBXGroup;
 			children = (
+				03BDAA142C3DA2A80081E3FA /* ViewModel */,
+				03BDAA132C3DA1FB0081E3FA /* Model */,
+				03BDAA102C3D7CE30081E3FA /* Extensions */,
+				03BDAA0D2C3D792B0081E3FA /* Views */,
 				038A06982C3D6F730017DE6E /* ChatMateApp.swift */,
 				038A069A2C3D6F730017DE6E /* ContentView.swift */,
 				038A06C22C3D71FA0017DE6E /* GoogleService-Info.plist */,
@@ -136,6 +148,38 @@
 				038A06B52C3D6F750017DE6E /* ChatMateUITestsLaunchTests.swift */,
 			);
 			path = ChatMateUITests;
+			sourceTree = "<group>";
+		};
+		03BDAA0D2C3D792B0081E3FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03BDAA0E2C3D79450081E3FA /* SignupView.swift */,
+				03BDAA172C3DABC50081E3FA /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03BDAA102C3D7CE30081E3FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03BDAA112C3D7DF50081E3FA /* Strings+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03BDAA132C3DA1FB0081E3FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03BDAA142C3DA2A80081E3FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03BDAA152C3DA2C20081E3FA /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BDAA182C3DABC50081E3FA /* LoginView.swift in Sources */,
+				03BDAA122C3D7DF50081E3FA /* Strings+Extensions.swift in Sources */,
+				03BDAA0F2C3D79450081E3FA /* SignupView.swift in Sources */,
 				038A069B2C3D6F730017DE6E /* ContentView.swift in Sources */,
+				03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */,
 				038A06992C3D6F730017DE6E /* ChatMateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
