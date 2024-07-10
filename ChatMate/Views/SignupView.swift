@@ -14,7 +14,8 @@ struct SignupView: View {
     @State private var password: String = ""
     @State private var displayName: String = ""
     
-    @EnvironmentObject private var vm: ChatViewModel
+    @EnvironmentObject private var chatVm: ChatViewModel
+    @EnvironmentObject private var appState: AppState
     
     private var isFormValid: Bool {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace && !displayName.isEmptyOrWhiteSpace
@@ -24,7 +25,8 @@ struct SignupView: View {
         
         do {
             let result = try await  Auth.auth().createUser(withEmail: email, password: password)
-            try await vm.updateDisplayName(user: result.user, displayName: displayName)
+            try await chatVm.updateDisplayName(user: result.user, displayName: displayName)
+            appState.routes.append(.login)
         } catch {
             print(error)
         }
@@ -42,13 +44,13 @@ struct SignupView: View {
                 Spacer()
                 Button("SignUp"){
                     Task{
-                       await signUp
+                        signUp
                     }
                 }.disabled(!isFormValid)
                     .buttonStyle(.borderless)
                 
                 Button("Login"){
-                    
+                    appState.routes.append(.login)
                 }.buttonStyle(.borderless)
                 Spacer()
             }
@@ -58,4 +60,6 @@ struct SignupView: View {
 
 #Preview {
     SignupView().environmentObject(ChatViewModel())
+        .environmentObject(AppState())
+       
 }
