@@ -19,6 +19,8 @@
 		038A06C82C3D73C90017DE6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06C72C3D73C90017DE6E /* FirebaseFirestore */; };
 		038A06CA2C3D73C90017DE6E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06C92C3D73C90017DE6E /* FirebaseFirestoreSwift */; };
 		038A06CC2C3D73C90017DE6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 038A06CB2C3D73C90017DE6E /* FirebaseStorage */; };
+		03B79C152C4064B7008C902D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B79C142C4064B7008C902D /* Group.swift */; };
+		03B79C172C407E26008C902D /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B79C162C407E26008C902D /* GroupListView.swift */; };
 		03BDAA0F2C3D79450081E3FA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA0E2C3D79450081E3FA /* SignupView.swift */; };
 		03BDAA122C3D7DF50081E3FA /* Strings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA112C3D7DF50081E3FA /* Strings+Extensions.swift */; };
 		03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA152C3DA2C20081E3FA /* ChatViewModel.swift */; };
@@ -58,6 +60,8 @@
 		038A06B32C3D6F750017DE6E /* ChatMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMateUITests.swift; sourceTree = "<group>"; };
 		038A06B52C3D6F750017DE6E /* ChatMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		038A06C22C3D71FA0017DE6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03B79C142C4064B7008C902D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		03B79C162C407E26008C902D /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		03BDAA0E2C3D79450081E3FA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		03BDAA112C3D7DF50081E3FA /* Strings+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extensions.swift"; sourceTree = "<group>"; };
 		03BDAA152C3DA2C20081E3FA /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				03EED9802C3EC3AB00A6A8AC /* MainView.swift */,
 				03EED9842C3EDE0600A6A8AC /* GroupListContainerView.swift */,
 				03EED9862C3EDF4E00A6A8AC /* AddNewGroupView.swift */,
+				03B79C162C407E26008C902D /* GroupListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				03EED9822C3ECF6D00A6A8AC /* AppState.swift */,
+				03B79C142C4064B7008C902D /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B79C152C4064B7008C902D /* Group.swift in Sources */,
 				03BDAA182C3DABC50081E3FA /* LoginView.swift in Sources */,
 				03EED9872C3EDF4E00A6A8AC /* AddNewGroupView.swift in Sources */,
 				03EED9812C3EC3AB00A6A8AC /* MainView.swift in Sources */,
@@ -343,6 +350,7 @@
 				038A069B2C3D6F730017DE6E /* ContentView.swift in Sources */,
 				03EED9852C3EDE0600A6A8AC /* GroupListContainerView.swift in Sources */,
 				03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */,
+				03B79C172C407E26008C902D /* GroupListView.swift in Sources */,
 				038A06992C3D6F730017DE6E /* ChatMateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

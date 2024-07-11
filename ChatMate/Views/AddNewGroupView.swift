@@ -11,9 +11,20 @@ struct AddNewGroupView: View {
     
     @Environment(\.dismiss) private var dismiss
     @State private var groupSubject: String = ""
+    @EnvironmentObject private var chatVm: ChatViewModel
     
     private var isFormValid: Bool {
         !groupSubject.isEmptyOrWhiteSpace
+    }
+    
+    private func saveGroup(){
+        let group = Group(subject: groupSubject)
+        chatVm.saveGroup(group: group) { error in
+            if let error {
+                print(error.localizedDescription)
+            }
+            dismiss()
+        }
     }
     
     var body: some View {
@@ -38,7 +49,7 @@ struct AddNewGroupView: View {
                     
                     ToolbarItem(placement: .navigationBarTrailing){
                         Button("Create"){
-                            
+                            saveGroup()
                         }.disabled(!isFormValid)
                     }
                 }
@@ -49,5 +60,6 @@ struct AddNewGroupView: View {
 #Preview {
     NavigationStack{
         AddNewGroupView()
+            .environmentObject(ChatViewModel())
     }
 }

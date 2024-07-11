@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GroupListContainerView: View {
-    
+    @EnvironmentObject private var chatVM: ChatViewModel
     @State private var isPresented: Bool = false
     var body: some View {
         VStack{
@@ -18,8 +18,17 @@ struct GroupListContainerView: View {
                     isPresented = true
                 }
             }
+            GroupListView(groups: chatVM.groups)
             Spacer()
-        }.padding()
+        }
+        .task {
+            do{
+                try await chatVM.populateGroups()
+            }catch {
+                print(error)
+            }
+        }
+        .padding()
             .sheet(isPresented: $isPresented){
                 AddNewGroupView()
             }
@@ -28,4 +37,5 @@ struct GroupListContainerView: View {
 
 #Preview {
     GroupListContainerView()
+        .environmentObject(ChatViewModel())
 }
