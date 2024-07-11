@@ -25,6 +25,8 @@
 		03BDAA182C3DABC50081E3FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDAA172C3DABC50081E3FA /* LoginView.swift */; };
 		03EED9812C3EC3AB00A6A8AC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EED9802C3EC3AB00A6A8AC /* MainView.swift */; };
 		03EED9832C3ECF6D00A6A8AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EED9822C3ECF6D00A6A8AC /* AppState.swift */; };
+		03EED9852C3EDE0600A6A8AC /* GroupListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EED9842C3EDE0600A6A8AC /* GroupListContainerView.swift */; };
+		03EED9872C3EDF4E00A6A8AC /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EED9862C3EDF4E00A6A8AC /* AddNewGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		03BDAA172C3DABC50081E3FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		03EED9802C3EC3AB00A6A8AC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		03EED9822C3ECF6D00A6A8AC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		03EED9842C3EDE0600A6A8AC /* GroupListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListContainerView.swift; sourceTree = "<group>"; };
+		03EED9862C3EDF4E00A6A8AC /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 				03BDAA0E2C3D79450081E3FA /* SignupView.swift */,
 				03BDAA172C3DABC50081E3FA /* LoginView.swift */,
 				03EED9802C3EC3AB00A6A8AC /* MainView.swift */,
+				03EED9842C3EDE0600A6A8AC /* GroupListContainerView.swift */,
+				03EED9862C3EDF4E00A6A8AC /* AddNewGroupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -329,11 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BDAA182C3DABC50081E3FA /* LoginView.swift in Sources */,
+				03EED9872C3EDF4E00A6A8AC /* AddNewGroupView.swift in Sources */,
 				03EED9812C3EC3AB00A6A8AC /* MainView.swift in Sources */,
 				03BDAA122C3D7DF50081E3FA /* Strings+Extensions.swift in Sources */,
 				03EED9832C3ECF6D00A6A8AC /* AppState.swift in Sources */,
 				03BDAA0F2C3D79450081E3FA /* SignupView.swift in Sources */,
 				038A069B2C3D6F730017DE6E /* ContentView.swift in Sources */,
+				03EED9852C3EDE0600A6A8AC /* GroupListContainerView.swift in Sources */,
 				03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */,
 				038A06992C3D6F730017DE6E /* ChatMateApp.swift in Sources */,
 			);
