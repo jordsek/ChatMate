@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035CA59E2C46917B00AC827C /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CA59D2C46917B00AC827C /* GroupDetailView.swift */; };
+		035CA5A02C469F4700AC827C /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CA59F2C469F4700AC827C /* ChatMessage.swift */; };
 		038A06992C3D6F730017DE6E /* ChatMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A06982C3D6F730017DE6E /* ChatMateApp.swift */; };
 		038A069B2C3D6F730017DE6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A069A2C3D6F730017DE6E /* ContentView.swift */; };
 		038A069D2C3D6F750017DE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038A069C2C3D6F750017DE6E /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035CA59D2C46917B00AC827C /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		035CA59F2C469F4700AC827C /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		038A06952C3D6F730017DE6E /* ChatMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038A06982C3D6F730017DE6E /* ChatMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMateApp.swift; sourceTree = "<group>"; };
 		038A069A2C3D6F730017DE6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				03EED9842C3EDE0600A6A8AC /* GroupListContainerView.swift */,
 				03EED9862C3EDF4E00A6A8AC /* AddNewGroupView.swift */,
 				03B79C162C407E26008C902D /* GroupListView.swift */,
+				035CA59D2C46917B00AC827C /* GroupDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				03EED9822C3ECF6D00A6A8AC /* AppState.swift */,
 				03B79C142C4064B7008C902D /* Group.swift */,
+				035CA59F2C469F4700AC827C /* ChatMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,10 +353,12 @@
 				03BDAA122C3D7DF50081E3FA /* Strings+Extensions.swift in Sources */,
 				03EED9832C3ECF6D00A6A8AC /* AppState.swift in Sources */,
 				03BDAA0F2C3D79450081E3FA /* SignupView.swift in Sources */,
+				035CA5A02C469F4700AC827C /* ChatMessage.swift in Sources */,
 				038A069B2C3D6F730017DE6E /* ContentView.swift in Sources */,
 				03EED9852C3EDE0600A6A8AC /* GroupListContainerView.swift in Sources */,
 				03BDAA162C3DA2C20081E3FA /* ChatViewModel.swift in Sources */,
 				03B79C172C407E26008C902D /* GroupListView.swift in Sources */,
+				035CA59E2C46917B00AC827C /* GroupDetailView.swift in Sources */,
 				038A06992C3D6F730017DE6E /* ChatMateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct GroupListView: View {
+ struct GroupListView: View {
     
     let groups: [Group]
     var body: some View {
         List(groups) { group in
             NavigationLink {
-                Text(group.subject)
+                GroupDetailView(group: group)
             } label: {
                 Image(systemName: "person.2")
                 Text(group.subject)
